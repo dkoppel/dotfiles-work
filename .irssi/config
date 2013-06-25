@@ -1,5 +1,12 @@
 servers = (
-  { address = "irc.onshored.com"; chatnet = "onshored"; port = "6667"; }
+  {
+    address = "irc.onshored.com";
+    chatnet = "onshored";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
 );
 
 chatnets = {
@@ -178,7 +185,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "david"; user_name = "david"; nick = "kuroishi"; };
+  core = { real_name = "david"; user_name = "david"; nick = "Dave"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     bell_beeps = "yes";
